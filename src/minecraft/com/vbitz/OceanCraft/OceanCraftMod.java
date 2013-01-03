@@ -1,5 +1,6 @@
 package com.vbitz.OceanCraft;
 
+import com.vbitz.OceanCraft.items.ItemScubaHelm;
 import com.vbitz.OceanCraft.network.PacketHandler;
 
 import cpw.mods.fml.common.Mod;
@@ -14,9 +15,12 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
 
 @Mod(modid = "oceanCraftVbitz", name = "OceanCraft", version = "0.0.1")
-@NetworkMod(clientSideRequired = true, serverSideRequired = true, packetHandler = PacketHandler.class)
+@NetworkMod(channels = { "oceanCraftVbitz" }, clientSideRequired = true, serverSideRequired = true, packetHandler = PacketHandler.class)
 public class OceanCraftMod {
 
+	// items
+	public ItemScubaHelm scubaHelm = new ItemScubaHelm(3400);
+	
 	@Instance("oceanCraftVbitz")
 	public static OceanCraftMod instance;
 	
