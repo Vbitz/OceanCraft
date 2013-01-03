@@ -1,6 +1,25 @@
-*.class
+/bin/*
+/conf/*
+/docs/*
+/eclipse/*
+/forge/*
+/jars/*
+/lib/*
+/logs/*
+/modsrc/*
+/reobf/*
+/runtime/*
+/temp/*
+/base/*
 
-# Package Files #
-*.jar
-*.war
-*.ear
+/src/minecraft/*
+/src/minecraft_server/*
+/src/common/*
+
+*.bat
+*.sh
+CHANGELOG
+LICENSE.txt
+
+!/src/minecraft/com/
+
