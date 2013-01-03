@@ -9,7 +9,7 @@ public class DeepOceanBiome extends BiomeGenOcean {
 		
 		setColor(112);
 		setBiomeName("Deep Ocean");
-		setMinMaxHeight(-1.8F, 0F);
+		setMinMaxHeight(-1.6F, -0.5F);
 		
 	}
 
